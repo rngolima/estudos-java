@@ -5,17 +5,23 @@ public class App {
 
     {
         Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(java.util.Locale.US); //isso forca o iscan a usar " ." como separador.
-        
+        scanner.useLocale(java.util.Locale.US); // isso forca o iscan a usar " ." como separador.
+
         System.out.println("Seu nome Completo: ");
         String nomeCompleto = scanner.nextLine();
         System.out.println("Olá, " + nomeCompleto + "!");
 
-
         System.out.print("Qual sua Idade: ");
         int idade = scanner.nextInt();
         System.out.println("Você tem " + idade + " anos.");
-
+        
+        if (idade < 18) {
+            System.out.println("Menor de idade.");
+        } else if (idade >= 18 && idade < 60) {
+            System.out.println("Adulto.");
+        } else {
+            System.out.println("Idoso.");
+        }
 
         System.out.print("Qual sua altura: ");
         double altura = scanner.nextDouble();
@@ -43,7 +49,5 @@ public class App {
 
         scanner.close();
 
-
-        
     }
 }
