@@ -29,7 +29,7 @@ public class App {
         String sexo = scanner.next();
         System.out.println("Seu Sexo é " + sexo + ".");
 
-        System.out.print("Qual seu Estado Civil: ");
+        System.out.println("Qual seu Estado Civil: ");
         String estadoCivil = scanner.next();
         System.out.println("Seu Estado Civil é " + estadoCivil + ".");
 
